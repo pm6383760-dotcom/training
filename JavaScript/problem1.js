@@ -5,7 +5,7 @@ function checkValues(a, b, c, d) {
 }
 
 // Example
-console.log(checkValues(30, 25, 40, 20)); // true
+console.log(checkValues(30, 25, 10, 20)); // false
 console.log(checkValues(20, 10, 40, 20)); // false
 
 
