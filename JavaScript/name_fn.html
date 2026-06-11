@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function message(){
+        alert("welcome")
+    }
+        const timedate = ()=>{
+            document.getElementById("dateandtime").innerHTML = new Date()
+        }
+</script>
+<body>
+    <button onclick="message()">click me</button>
+    <button onclick="timedate()">Date and Time </button>
+    <p id="dateandtime"></p>
+</body>
+</html>
