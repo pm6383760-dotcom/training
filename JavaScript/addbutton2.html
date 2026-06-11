@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="number" id="a" placeholder="First Number">
+<br><br>
+
+<input type="number" id="b" placeholder="Second Number">
+<br><br>
+
+<button onclick="add()">Add</button>
+
+<p id="result"></p>
+
+<script>
+function add() {
+    let x = document.getElementById("a").value;
+    let y = document.getElementById("b").value;
+
+    if (x === "" || y === "") {
+        document.getElementById("result").innerHTML = "Please enter two numbers";
+        return;
+    }
+
+    let sum = Number(x) + Number(y);
+    document.getElementById("result").innerHTML = "Sum = " + sum;
+}
+</script>
+
+</body>
+</html>

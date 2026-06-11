@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="number" id="a" placeholder="First Number">
+<input type="number" id="b" placeholder="Second Number">
+<br><br>
+
+<button onclick="add()">Add</button>
+<button onclick="sub()">Subtract</button>
+<button onclick="mul()">Multiply</button>
+<button onclick="div()">Divide</button>
+
+<p id="result"></p>
+
+<script>
+function add(){
+  let a=Number(document.getElementById("a").value);
+  let b=Number(document.getElementById("b").value);
+  document.getElementById("result").innerHTML="Sum = "+(a+b);
+}
+
+function sub(){
+  let a=Number(document.getElementById("a").value);
+  let b=Number(document.getElementById("b").value);
+  document.getElementById("result").innerHTML="Difference = "+(a-b);
+}
+
+function mul(){
+  let a=Number(document.getElementById("a").value);
+  let b=Number(document.getElementById("b").value);
+  document.getElementById("result").innerHTML="Product = "+(a*b);
+}
+
+function div(){
+  let a=Number(document.getElementById("a").value);
+  let b=Number(document.getElementById("b").value);
+  document.getElementById("result").innerHTML="Quotient = "+(a/b);
+}
+</script>
+
+</body>
+</html>
